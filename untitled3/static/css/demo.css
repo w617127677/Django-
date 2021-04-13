@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+        *{margin:0;padding:0}
+        a,img,a img{border: 0;text-decoration: none;}
+        html{width: 100%;height: 100%;}
+        body{margin:0;padding:0;width: 100%;height:100%;font-family:"lucida Grande",Verdana,"Microsoft YaHei",sans-serif;/*background: #eee;*/overflow: hidden;display: table;}
+        .header{display:table-row;z-index:100;box-sizing:border-box;width:100%;height:40px;background:#42a7ff;background-image: linear-gradient(90deg, #9c4dff 0%, #42a7ff 100%);}
+        .logo{float:left;width: 165px;margin-left: 20px;margin-top: 5px;}
+        .logo img,.loading-logo img{width:auto;height:30px;opacity:.95;filter: alpha(opacity=95);}
+        .logo a:hover img{opacity:1;filter: alpha(opacity=100);}
+        .buy{float:right;margin-top: 7px;}
+        .buy a{display:block;padding:0 12px;height:26px;border-radius:2px;background:#1471CA;color:#fff;text-align:center;text-decoration:none;font-size:12px;line-height:26px;opacity:.95;filter: alpha(opacity=95);}
+        .buy a:hover{opacity:1;filter: alpha(opacity=100);}
+        .device{float: right;margin-right: 20px;margin-top: 7px;}
+        .device-item{padding: 0 8px;float: left;color: #fff;opacity: .3;filter: alpha(opacity=30);cursor: pointer;text-align: center;}
+        .device-item.active{opacity: 0.85;filter: alpha(opacity=85);}
+        .device-item:hover{opacity: 1;filter: alpha(opacity=100);}
+        .device-item i{font-size: 20px;line-height: 26px;}
+        .close{float:right;margin-left:20px;margin-right:20px;margin-top: 5px;}
+        .close a{display:block;width:30px;height:30px;color:#fff;text-align:center;text-decoration:none;font-size:18px;line-height:30px;opacity:.8;filter: alpha(opacity=80);}
+        .close a:hover{opacity:1;filter: alpha(opacity=100);}
+        .iframe{display:block;width:100%;height:100%;margin:0 auto;border:0;background:none;transition: all 0.4s ease-out 0s;-moz-transition: all 0.4s ease-out 0s;-webkit-transition: all 0.4s ease-out 0s;}
+        .iframe.phone{width: 414px;box-shadow: 0 0 8px 1px rgba(0,0,0,.1);transition: all 0.4s ease-out 0s;-moz-transition: all 0.4s ease-out 0s;-webkit-transition: all 0.4s ease-out 0s;}
+        .theme{position:relative;z-index: 99;float:left;margin-left:15px;width:200px;margin-top: 7px;}
+        .theme-name{box-sizing:border-box;padding:0 10px 0 15px;width:200px;height:26px;border: 1px solid #eee;background: #fff;color: #444;font-size:14px;line-height:24px;cursor:pointer}
+        .theme-name:hover{border:1px solid #e3e3e3;background:#eee;color:#222}
+        .theme-name i{float:right;margin-right: -3px;color:#aaa;font-size: 14px;}
+        .theme-list{position:absolute;top:26px;left:0;display:none;padding:0;width:100%;background:#f9f9f9;list-style:none}
+        .theme-list.active{display:block}
+        .theme-list li{padding:0 15px;border-bottom:1px solid #e3e3e3;color:#444;font-size:14px;line-height:36px;cursor:pointer}
+        .theme-list li:hover{background:#eee;color:#222}
+        .iframe-wrap{display:table-row;width:100%;height:100%;margin:0;padding: 0;vertical-align: top;}
+        .iframe-inner{position:relative;width:100%;height:100%;margin:0;padding: 0;}
+        .loading{position: absolute;width: 100%;height: 100%;left: 0;top:0;background: rgba(0, 0, 0, 0.8);text-align:center;}
+        .loading-logo{position: absolute;width: 100%;top:50%;margin-top: -30px;}
+        .loading-logo img{opacity: 1;filter: alpha(opacity=100);}
+        .notice{float:left;margin-left: 30px;margin-top: 5px;font-size: 12px;color: #f3f3f3;line-height: 30px;}
+        .notice a{color: #ffffe0;}
+        .notice a:hover{color: #fff;text-decoration: none;}        
+        @media (max-width: 767px){ .header{padding: 10px;}.theme,.buy,.device{display: none;} }
+        @font-face {font-family: "iconfont";
+            src: url('//at.alicdn.com/t/font_fwp2gc6h5qeyiudi.eot?t=1483889874675');
+            src: url('//at.alicdn.com/t/font_fwp2gc6h5qeyiudi.eot?t=1483889874675#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_fwp2gc6h5qeyiudi.woff?t=1483889874675') format('woff'),
+            url('//at.alicdn.com/t/font_fwp2gc6h5qeyiudi.ttf?t=1483889874675') format('truetype'),
+            url('//at.alicdn.com/t/font_fwp2gc6h5qeyiudi.svg?t=1483889874675#iconfont') format('svg');
+        }
+        .iconfont {font-family:"iconfont" !important;font-size:16px;font-style:normal;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+        .icon-down:before { content: "\e971"; }
+        .icon-phone:before { content: "\e606"; }
+        .icon-pc:before { content: "\e637"; }
+

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://v.bootstrapmb.com/2018/9/ikobl2186/index.html -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="TTUNION_verify" content="b846c3c2b85efabc496d2a2b8399cd62">
+    <meta name="sogou_site_verification" content="gI1bINaJcL">
+    <meta name="360-site-verification" content="37ae9186443cc6e270d8a52943cd3c5a">
+    <meta name="baidu_union_verify" content="99203948fbfbb64534dbe0f030cbe817">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE;chrome=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="#">
+    <meta name="description" content="#">
+    <meta name="author" content="AUI, a-ui.com">
+    <meta name="baidu-site-verification" content="ZVPGgtpUfW">
+    <title>二手网站</title>
+    <link rel="icon" type="image/x-icon" href="http://v.bootstrapmb.com/2018/9/ikobl2186/favicon.ico">
+    <link href="http://v.bootstrapmb.com/2018/9/ikobl2186/iTunesArtwork@2x.png" sizes="114x114"
+          rel="apple-touch-icon-precomposed">
+    <link type="text/css" rel="stylesheet" href="/static/css/core.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/icon.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/home.css">
+</head>
+<body style=""><!-- head YDC begin -->
+
+<header class="ydc-header">
+    <div class="ydc-entered">
+        <div class="ydc-header-content ydc-flex">
+
+            <div class="ydc-column">
+                <div class="ydc-column-user">
+                    <div class="ydc-user-photo"><a href="javascript:;"><img
+                            src="/static/{{ user.img }}" title="" about="" alt=""></a></div>
+                    <div class="ydc-user-info">
+                        <div class="ydc-user-info-name"><a href="../me">{{ user.name }}</a>
+                            <div/>
+                            <div class="ydc-user-info-nafme"><a href="../me">当前在线：{{ user.username }}</a></li>
+                                <div class="ydc-user-info-func ydc-flex"><span class="ydc-tag">账号审核中</span><a
+                                        href="/logout/">退出</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!-- head YDC end --><!-- content YDC begin -->
+<section>
+    <div class="ydc-content-slide ydc-body">
+        <div class="ydc-flex"><!-- left begin -->
+            <div class="ydc-column ydc-column-2">
+                <div class="ydc-menu">
+                    <ul>
+                        <li class="ydc-menu-item"><a href="../son">
+                            <i class="ydc-icon ydc-icon-home fl"></i>首页</a>
+                        </li>
+                        <li class="ydc-menu-item"><a href="../see"
+                                                     class="active"><i class="ydc-icon ydc-icon-home fl"></i>查看</a>
+                        </li>
+                         <li class="ydc-menu-item"><a href="../to_chat"
+                                                     ><i class="ydc-icon ydc-icon-home fl"></i>信息</a>
+                        </li>
+                        <li class="ydc-menu-item"><a href="../fabu">
+                            <i class="ydc-icon ydc-icon-find fl"></i>发布</a></li>
+                        <li class="ydc-menu-item"><span class="ydc-menu-sub-title"><i
+                                class="ydc-icon ydc-icon-file fl"></i>管理</span>
+                            <ul>
+                                <li><a href="../neirong">全部商品</a></li>
+
+                            </ul>
+                        </li>
+
+                        </li>
+                        <li class="ydc-menu-item"><span class="ydc-menu-sub-title"><i
+                                class="ydc-icon ydc-icon-set fl"></i>设置</span>
+                            <ul>
+                                <li><a href="../me">账号信息</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="ydc-menu-item"><span class="ydc-menu-sub-title"><i
+                                class="ydc-icon ydc-icon-customer fl"></i>客服</span>
+                            <ul>
+                                <li><a href="../zixun">在线咨询</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- left end --><!-- right begin -->
+            <div class="ydc-column ydc-column-8">
+                <div class="ydc-entered-box">
+                    <div class="ydc-content-right">
+
+
+                        <div class="ydc-loading-box">
+                            <div class="ydc-tabPanel">
+                                <div>
+                                    <ul>
+                                        <li class="hit">在售</li>
+                                        <li>已购买物品</li>
+                                        <li>已出售物品</li>
+                                        <li>账户信息</li>
+                                    </ul>
+                                </div>
+                                <div class="ydc-panes">
+                                    <div class="ydc-pane" style="display:block;">
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>商品名称</th>
+                                                <th>价格</th>
+                                                <th>商品简介</th>
+                                                 <th>发布时间</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% for foo in wordtoo %}
+                                                <tr>
+                                                    <td>{{ foo.name }}</td>
+                                                    <td>{{ foo.price }}</td>
+                                                    <td>{{ foo.jianjie }}</td>
+                                                    <td>{{ foo.data }}</td>
+
+
+
+                                                </tr>
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+
+
+                                    </div>
+                                    <div class="ydc-pane" >
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>商品名称</th>
+                                                <th>价格</th>
+                                                <th>交易对象</th>
+                                                <th>联系方式</th>
+                                                <th>交易时间</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% for foo in buy %}
+                                                <tr>
+                                                    <td>{{ foo.name }}</td>
+                                                    <td>{{ foo.price }}</td>
+                                                    <td>{{ foo.username }}</td>
+                                                    <td>{{ foo.lianxi }}</td>
+                                                    <td>{{ foo.data }}</td>
+
+
+                                                </tr>
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+
+
+                                    </div>
+                                    <div class="ydc-pane" >
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>商品名称</th>
+                                                <th>价格</th>
+                                                <th>交易对象</th>
+                                                <th>联系方式</th>
+                                                <th>交易时间</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% for foo in sell %}
+                                                <tr>
+                                                    <td>{{ foo.name }}</td>
+                                                    <td>{{ foo.price }}</td>
+                                                    <td>{{ foo.username }}</td>
+                                                    <td>{{ foo.lianxi }}</td>
+                                                    <td>{{ foo.data }}</td>
+
+
+
+                                                </tr>
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+
+                                        <div class="ydc-pagination">
+
+                                        </div>
+                                    </div>
+                                    <div class="ydc-pane" >
+                                <div class="ydc-reg-form-group clearfix"><label>帐号名称</label>
+                                    <div class="ydc-reg-form-input"><label>{{ a.name }}</label></div>
+                                </div>
+                                <div class="ydc-reg-form-group clearfix"><label>帐号类别</label>
+                                    <div class="ydc-reg-form-input"><label>自媒体</label></div>
+                                </div>
+                                <div class="ydc-reg-form-group clearfix"><label>分类</label>
+                                    <div class="ydc-reg-form-input"><label>汽车</label></div>
+                                </div>
+                                <div class="ydc-reg-form-group clearfix"><label>帐号图标</label>
+                                    <div class="ydc-reg-form-input"><label></label>
+                                        <div class="ydc-reg-form-text ydc-reg-form-user-logo"><img
+                                                src="/static/{{ a.img }}" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="ydc-reg-form-group clearfix"><label>帐号简介</label>
+                                    <div class="ydc-reg-form-input"><label>{{ a.jianjie }}</label></div>
+                                </div>
+
+
+                                <div class="ydc-reg-form-group clearfix"><label>类型</label>
+                                    <div class="ydc-reg-form-input"><label>个人</label></div>
+                                </div>
+
+                                <div class="ydc-reg-form-group clearfix"><label>邮箱</label>
+                                    <div class="ydc-reg-form-input"><label>{{ a.youxiang }}</label></div>
+                                </div>
+                                <div class="ydc-reg-form-group clearfix"><label>QQ/微信</label>
+                                    <div class="ydc-reg-form-input"><label>{{ a.qq }}</label></div>
+                                </div>
+
+
+
+                            </div>
+                                </div><!-- gongGao End --></div>
+                        </div>
+                    </div><!-- right end --></div>
+            </div>
+
+</section><!-- content YDC end -->
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript">var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000);
+}</script>
+<script type="text/javascript">$(function () {
+    $('.ydc-tabPanel ul li').click(function () {
+        $(this).addClass('hit').siblings().removeClass('hit');
+        $('.ydc-panes>div:eq(' + $(this).index() + ')').show().siblings().hide();
+    })
+})</script>
+</body>
+</html>
